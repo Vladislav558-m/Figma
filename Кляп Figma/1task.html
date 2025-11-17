@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Список сотрудников</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  /* Боковая панель */
+  .sidebar {
+    width: 200px;
+    background-color: #ffff99; /* светло-жёлтый */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* Основная часть */
+  .main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* Заголовок */
+  .header {
+    background-color: #ffff99; /* светло-жёлтый */
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  /* Таблица */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  /* Кнопка добавить */
+  .add-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .add-btn:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">
+    <h2>Staff</h2>
+  </div>
+  <nav>
+    <ul style="list-style: none; padding: 0;">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Распорядок</a></li>
+    </ul>
+  </nav>
+  <a href="#" class="add-btn">Добавить</a>
+</div>
+
+<div class="main">
+  <div class="header">Список сотрудников</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Таб. номер</th>
+        <th>ФИО</th>
+        <th>email</th>
+        <th>телефон</th>
+        <th>должность</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>00001</td>
+        <td>Смирнова Мария Михайловна</td>
+        <td>smirnova@gmail.com</td>
+        <td>8(495)344 99 33</td>
+        <td>менеджер</td>
+      </tr>
+      <tr>
+        <td>00001</td>
+        <td>Смирнова Мария Михайловна</td>
+        <td>smirnova@gmail.com</td>
+        <td>8(495)344 99 33</td>
+        <td>менеджер</td>
+      </tr>
+      <tr>
+        <td>00001</td>
+        <td>Смирнова Мария Михайловна</td>
+        <td>smirnova@gmail.com</td>
+        <td>8(495)344 99 33</td>
+        <td>менеджер</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html

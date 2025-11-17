@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Добавить сотрудника</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #fff;
+  }
+
+  /* Боковая панель */
+  .sidebar {
+    width: 200px;
+    background-color: #ffffcc; /* светло-жёлтый */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .sidebar h2 {
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Иконка */
+  .icon {
+    margin-right: 8px;
+  }
+
+  /* Меню */
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Кнопка добавления */
+  .add {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: #ffff66;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .add svg {
+    margin-right: 8px;
+  }
+
+  /* Основной контент */
+  .main {
+    flex: 1;
+    padding: 20px;
+  }
+
+  /* Заголовок */
+  .title {
+    background-color: #ffff66;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* Форма */
+  .form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+
+  .form-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+
+  /* Кнопка сохранить */
+  .save-btn {
+    background-color: #ffff66;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  .save-btn:hover {
+    background-color: #ffeb3b;
+  }
+</style>
+</head>
+<body>
+
+<!-- Боковая панель -->
+<div class="sidebar">
+  <h2>
+    <!-- Иконка человечка -->
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="blue" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M4 20c0-4 8-4 8-4s8 0 8 4v2H4v-2z"/>
+    </svg>
+    Staff
+  </h2>
+  <ul class="menu">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Распорядок</a></li>
+  </ul>
+  <a href="#" class="add">
+    <!-- Иконка плюса -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" viewBox="0 0 24 24">
+      <path d="M12 5v14m-7-7h14"/>
+    </svg>
+    Добавить
+  </a>
+</div>
+
+<!-- Основной контент -->
+<div class="main">
+  <div class="title">Добавить сотрудника</div>
+  <div class="form-container">
+    <div class="form-title">НОВЫЙ СОТРУДНИК</div>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Код сотрудника" />
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="email" />
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="ФИО" />
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Телефон" />
+      </div>
+      <div class="form-group">
+        <select>
+          <option>Должность</option>
+          <option>Программист</option>
+          <option>Менеджер</option>
+          <option>Дизайнер</option>
+        </select>
+      </div>
+      <button type="submit" class="save-btn">СОХРАНИТЬ</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

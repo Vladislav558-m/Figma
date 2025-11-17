@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Распорядок</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  /* Левая боковая панель */
+  .sidebar {
+    width: 250px;
+    background-color: #ffffcc; /* светлый желтый */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* Логотип и меню в боковой панели */
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .logo svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu li {
+    margin-bottom: 10px;
+  }
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  /* Кнопка "Добавить" */
+  .add-button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .add-button svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  /* Основная часть */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  /* Заголовок */
+  .title {
+    background-color: #ffffcc;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  /* Текст */
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- Левая боковая панель -->
+<div class="sidebar">
+  <div class="logo">
+    <!-- Иконка "Staff" -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 8-4 8-4s8 0 8 4v2H4v-2z"/></svg>
+    <span>Staff</span>
+  </div>
+  <ul class="menu">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Распорядок</a></li>
+  </ul>
+  <a href="#" class="add-button">
+    <!-- Иконка "плюс" -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M12 5v14m-7-7h14"/></svg>
+    Добавить
+  </a>
+</div>
+
+<!-- Основной контент -->
+<div class="content">
+  <div class="title">Распорядок</div>
+  <div class="text">
+    <p>Для чего нужны правила внутреннего трудового распорядка</p>
+    <p>Роль правил внутреннего распорядка, относящихся к локальным нормативным актам, многогранна:</p>
+    <ul>
+      <li>они определяют порядок назначения на должность и увольнения сотрудников,</li>
+      <li>режим труда и отдыха,</li>
+      <li>права и полномочия,</li>
+      <li>ответственность за различного рода нарушения,</li>
+      <li>способы поощрения и меры наказаний за те или иные проступки,</li>
+      <li>дресс-код,</li>
+      <li>иные условия.</li>
+    </ul>
+    <p>В глобальном смысле данный документ способствует повышению производительности труда, расширению перспектив организации. В зависимости от предприятия, правила могут редактироваться и содержать какие-то дополнительные пункты.</p>
+    <p><em>Единственное, чего не касаются правила трудового распорядка - конкретные трудовые функции сотрудников - их регулируют положения трудового договора или должностная инструкция.</em></p>
+    <p>Некоторые компании довольно пренебрежительно относятся к наличию или составлению данного документа. Это неправильно, поскольку в случае жалобы кого-либо из сотрудников в трудовую инспекцию, ее представитель при выездной проверке, первым делом интересуются именно правилами внутреннего трудового распорядка. Еще и потому к составлению документа стоит относиться в высшей степени внимательно и серьезно - это позволит избежать в будущем разногласий с контролирующими структурами и возможных административных наказаний.</p>
+  </div>
+</div>
+
+</body>
+</html>
